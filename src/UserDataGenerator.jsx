@@ -13,7 +13,7 @@ const UserDataGenerator = () => {
         setLoading(true);
         console.log("Fetching data with:", { region, errors, seed, page });
         try {
-            const response = await fetch('http://localhost:3000/generate', {
+            const response = await fetch('https://task5-backend-iota.vercel.app/generate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
